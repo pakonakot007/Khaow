@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://go.fliplink.me/view/4A1A3C57-8A2E-40FD-9842-7B47D720F46A/sitemap.xml

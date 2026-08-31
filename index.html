@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ข้าวและธัญพืชสำคัญของโลก 6 สายพันธุ์ | Rice & Major Grains Study</title>
+    <meta name="description" content="เว็บไซต์นำเสนอข้อมูลเชิงวิชาการเรื่องข้าวและธัญพืชสำคัญของโลก 6 สายพันธุ์ ประกอบด้วยภาพรวมข้อมูล การวิเคราะห์โภชนาการ และการเปรียบเทียบความต้านทานโรคพืช" />
+    <meta name="keywords" content="ข้าว, ธัญพืช, ข้าวหอมมะลิ, ข้าวสาลี, ข้าวโอ๊ต, agriculture, grains, data visualization, Thai agriculture" />
+    <meta name="author" content="Khaow Research Studio" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://go.fliplink.me/view/4A1A3C57-8A2E-40FD-9842-7B47D720F46A" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ข้าวและธัญพืชสำคัญของโลก 6 สายพันธุ์" />
+    <meta property="og:description" content="บทนำเชิงลึกเรื่องข้าวและธัญพืชที่สำคัญต่อความมั่นคงทางอาหารโลก" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=1200&q=80" />
+    <meta property="og:url" content="https://go.fliplink.me/view/4A1A3C57-8A2E-40FD-9842-7B47D720F46A" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ข้าวและธัญพืชสำคัญของโลก 6 สายพันธุ์" />
+    <meta name="twitter:description" content="ข้อมูลเชิงวิชาการและการวิเคราะห์ภาพรวมของสายพันธุ์ธัญพืชสำคัญ" />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=1200&q=80" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo-grain.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Kanit:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#2D6A4F',
+              accent: '#52B788',
+              gold: '#D4A537',
+              cream: '#FAF7F0',
+              earth: '#6F4E37',
+              ink: '#1B1B1B',
+              darkbg: '#0F1B14',
+              darkgold: '#F5C76E'
+            },
+            fontFamily: {
+              thai: ['IBM Plex Sans Thai', 'sans-serif'],
+              display: ['Kanit', 'sans-serif'],
+              english: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif']
+            },
+            boxShadow: {
+              soft: '0 14px 30px rgba(17, 24, 39, 0.10)',
+              glow: '0 0 0 1px rgba(212,165,55,0.25), 0 12px 35px rgba(45,106,79,0.20)'
+            },
+            borderRadius: {
+              xl2: '1.25rem',
+              xxl: '2rem'
+            },
+            screens: {
+              xs: '360px'
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-cream text-ink dark:bg-darkbg dark:text-cream antialiased overflow-x-hidden font-thai selection:bg-primary/20">
+    <!-- โหลดหน้าเว็บและแสดงสถานะก่อนเข้าสู่เนื้อหา -->
+    <div id="preloader" class="fixed inset-0 z-[120] flex items-center justify-center bg-cream dark:bg-darkbg transition-opacity duration-700">
+      <div class="flex flex-col items-center gap-4">
+        <div class="grain-logo-wrap">
+          <img src="assets/logo-grain.svg" alt="โลโก้ข้าว" class="w-20 h-20 animate-spin-slow" />
+        </div>
+        <div class="w-56 h-2 overflow-hidden rounded-full bg-emerald-100 dark:bg-slate-800">
+          <div id="preloader-bar" class="h-full w-0 rounded-full bg-gradient-to-r from-primary via-accent to-gold transition-all duration-200"></div>
+        </div>
+        <p class="text-sm tracking-[0.35em] uppercase text-primary dark:text-darkgold">Loading data</p>
+      </div>
+    </div>
+
+    <div class="progress-bar fixed top-0 left-0 h-1 bg-gradient-to-r from-primary via-accent to-gold shadow-lg z-[90]" id="reading-progress"></div>
+
+    <header class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
+        <div class="navbar-shell flex items-center justify-between rounded-full border border-white/30 bg-white/50 px-4 py-3 shadow-soft backdrop-blur-xl dark:border-white/10 dark:bg-darkbg/60">
+          <a href="#top" class="flex items-center gap-3" aria-label="กลับสู่หน้าแรก">
+            <img src="assets/logo-grain.svg" alt="โลโก้รวงข้าว" class="h-9 w-9" />
+            <span class="font-display text-lg font-semibold tracking-wide text-primary dark:text-darkgold">Khaow</span>
+          </a>
+
+          <div class="hidden items-center gap-7 lg:flex">
+            <a href="#intro" class="nav-link text-sm font-medium text-ink/80 transition-colors hover:text-primary dark:text-cream/80 dark:hover:text-darkgold">บทนำ</a>
+            <a href="#species" class="nav-link text-sm font-medium text-ink/80 transition-colors hover:text-primary dark:text-cream/80 dark:hover:text-darkgold">สายพันธุ์</a>
+            <a href="#nutrition" class="nav-link text-sm font-medium text-ink/80 transition-colors hover:text-primary dark:text-cream/80 dark:hover:text-darkgold">โภชนาการ</a>
+            <a href="#disease" class="nav-link text-sm font-medium text-ink/80 transition-colors hover:text-primary dark:text-cream/80 dark:hover:text-darkgold">โรคพืช</a>
+            <a href="#timeline" class="nav-link text-sm font-medium text-ink/80 transition-colors hover:text-primary dark:text-cream/80 dark:hover:text-darkgold">วงจรชีวิต</a>
+            <a href="#references" class="nav-link text-sm font-medium text-ink/80 transition-colors hover:text-primary dark:text-cream/80 dark:hover:text-darkgold">อ้างอิง</a>
+          </div>
+
+          <div class="flex items-center gap-2 sm:gap-3">
+            <button id="lang-toggle" aria-label="Switch language" class="inline-flex items-center justify-center rounded-full border border-primary/20 bg-primary/5 px-3 py-2 text-xs font-semibold text-primary transition hover:bg-primary hover:text-white dark:border-darkgold/30 dark:bg-darkgold/10 dark:text-darkgold dark:hover:bg-darkgold dark:hover:text-darkbg">
+              EN
+            </button>
+            <button id="theme-toggle" aria-label="Toggle dark mode" class="icon-btn inline-flex items-center justify-center rounded-full border border-slate-200 bg-white/70 p-2.5 text-ink shadow-sm transition hover:border-accent hover:text-primary dark:border-slate-700 dark:bg-slate-900/60 dark:text-cream">
+              <i data-lucide="moon" class="h-4 w-4"></i>
+            </button>
+            <button id="menu-toggle" aria-label="Open navigation menu" class="icon-btn inline-flex items-center justify-center rounded-full border border-slate-200 bg-white/70 p-2.5 text-ink shadow-sm transition hover:border-accent hover:text-primary lg:hidden dark:border-slate-700 dark:bg-slate-900/60 dark:text-cream">
+              <i data-lucide="menu" class="h-4 w-4"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="mobile-menu" class="fixed inset-0 z-[60] hidden bg-ink/85 backdrop-blur-md">
+      <div class="flex min-h-full items-start justify-end p-4">
+        <div class="w-full max-w-sm rounded-3xl border border-white/10 bg-cream p-6 shadow-soft dark:bg-slate-900">
+          <div class="mb-6 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <img src="assets/logo-grain.svg" alt="โลโก้รวงข้าว" class="h-10 w-10" />
+              <span class="font-display text-lg font-semibold text-primary dark:text-darkgold">Khaow</span>
+            </div>
+            <button id="close-menu" aria-label="Close navigation menu" class="icon-btn rounded-full border border-slate-200 p-2 text-ink dark:border-slate-700 dark:text-cream">
+              <i data-lucide="x" class="h-4 w-4"></i>
+            </button>
+          </div>
+          <div class="flex flex-col gap-4 text-base font-medium">
+            <a href="#intro" class="mobile-link rounded-xl px-3 py-2 hover:bg-primary/5 dark:hover:bg-primary/10">บทนำ</a>
+            <a href="#species" class="mobile-link rounded-xl px-3 py-2 hover:bg-primary/5 dark:hover:bg-primary/10">สายพันธุ์</a>
+            <a href="#nutrition" class="mobile-link rounded-xl px-3 py-2 hover:bg-primary/5 dark:hover:bg-primary/10">โภชนาการ</a>
+            <a href="#disease" class="mobile-link rounded-xl px-3 py-2 hover:bg-primary/5 dark:hover:bg-primary/10">โรคพืช</a>
+            <a href="#timeline" class="mobile-link rounded-xl px-3 py-2 hover:bg-primary/5 dark:hover:bg-primary/10">วงจรชีวิต</a>
+            <a href="#references" class="mobile-link rounded-xl px-3 py-2 hover:bg-primary/5 dark:hover:bg-primary/10">อ้างอิง</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="top" class="relative">
+      <!-- ส่วน Hero: ภาพทุ่งนาและข้อความสรุปหลักของโครงการ -->
+      <section class="hero relative min-h-screen overflow-hidden">
+        <div class="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=1600&q=80" alt="ทุ่งนาข้าวในช่วงเช้า" class="h-full w-full object-cover" loading="eager" />
+          <div class="absolute inset-0 bg-gradient-to-r from-[#1b1b1b]/80 via-[#1b1b1b]/40 to-[#2D6A4F]/30"></div>
+        </div>
+
+        <div class="relative mx-auto flex min-h-screen max-w-7xl items-center px-4 pb-16 pt-28 sm:px-6 lg:px-8">
+          <div class="max-w-3xl text-white">
+            <div class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.28em] text-white/80 backdrop-blur-sm">
+              <span class="h-2 w-2 rounded-full bg-gold"></span>
+              Global grain study
+            </div>
+            <h1 class="mt-6 font-display text-4xl leading-tight sm:text-5xl lg:text-7xl">
+              <span class="block typewriter-line">ข้าวและธัญพืช</span>
+              <span class="block text-gold typewriter-line delay-150">เมล็ดพันธุ์แห่งความมั่นคงทางอาหารโลก</span>
+            </h1>
+            <p class="mt-6 max-w-xl text-base leading-8 text-slate-200 sm:text-lg">
+              การศึกษาเชิงลึกเกี่ยวกับสายพันธุ์ธัญพืชที่หล่อเลี้ยงคนทั่วโลก พร้อมข้อมูลอ้างอิง การเปรียบเทียบทางโภชนาการ และแนวโน้มความยั่งยืนทางเกษตรกรรม
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="#species" class="btn-primary inline-flex items-center gap-3 rounded-full bg-gold px-6 py-3 font-semibold text-ink shadow-glow transition-all hover:-translate-y-1 hover:shadow-xl">
+                สำรวจสายพันธุ์
+                <i data-lucide="arrow-right" class="h-4 w-4"></i>
+              </a>
+              <a href="#references" class="btn-secondary inline-flex items-center gap-3 rounded-full border border-white/25 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur-sm transition-all hover:-translate-y-1 hover:bg-white/15">
+                ดาวน์โหลดรายงาน
+                <i data-lucide="download" class="h-4 w-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-white/80">
+          <a href="#intro" aria-label="เลื่อนลงสู่ส่วนบทนำ" class="flex flex-col items-center gap-2">
+            <span class="text-xs uppercase tracking-[0.3em]">Scroll</span>
+            <i data-lucide="chevron-down" class="h-6 w-6"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- ส่วนบทนำ: อธิบายความสำคัญของธัญพืชต่อโลก -->
+      <section id="intro" class="section-shell">
+        <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div class="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-center">
+            <div class="reveal">
+              <div class="eyebrow">Why it matters</div>
+              <h2 class="section-title mt-4 max-w-xl">ธัญพืชเป็นรากฐานของระบบอาหารโลก</h2>
+              <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300">
+                ข้าว ข้าวสาลี และข้าวโอ๊ตไม่ใช่เพียงพืชทางการเกษตร แต่เป็นพลังงานเชิงโภชนาการที่ผสานเข้ากับวัฒนธรรมและเศรษฐกิจของมนุษย์มากกว่าครึ่งโลก ข้าวเป็นอาหารหลักของผู้คนประมาณ 3.5 พันล้านคนทั่วโลก ขณะที่ธัญพืชทุกชนิดยังคงเป็นแหล่งคาร์โบไฮเดรต โปรตีน ใยอาหาร และสารต้านอนุมูลอิสระที่จำเป็นต่อสุขภาพสังคม
+              </p>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2 reveal">
+              <div class="stat-card">
+                <span class="stat-number" data-target="50">0</span>
+                <span class="stat-label">% ของประชากรโลกที่บริโภคข้าวเป็นอาหารหลัก</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number" data-target="33">0</span>
+                <span class="stat-label">ล้านตัน ผลผลิตข้าวไทยต่อปี</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number" data-target="9.5">0</span>
+                <span class="stat-label">พันล้านดอลลาร์ มูลค่าอุตสาหกรรมส่งออก</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number" data-target="6">0</span>
+                <span class="stat-label">สายพันธุ์ที่นำมาศึกษาและวิเคราะห์</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ส่วนสายพันธุ์: gallery + filter + search + modal -->
+      <section id="species" class="section-shell bg-white/30 dark:bg-slate-900/30">
+        <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div class="reveal">
+              <div class="eyebrow">Species gallery</div>
+              <h2 class="section-title">สายพันธุ์ธัญพืชสำคัญ 6 ชนิด</h2>
+            </div>
+            <div class="reveal">
+              <a href="#nutrition" class="inline-flex items-center gap-2 text-sm font-semibold text-primary dark:text-darkgold">ดูข้อมูลโภชนาการเพิ่มเติม <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+            </div>
+          </div>
+
+          <div class="mt-8 flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
+            <div class="filter-bar flex flex-wrap gap-3 reveal">
+              <button class="filter-chip active" data-filter="all" aria-label="Show all crops">ทั้งหมด</button>
+              <button class="filter-chip" data-filter="ข้าว" aria-label="Filter rice">ข้าว</button>
+              <button class="filter-chip" data-filter="สาลี" aria-label="Filter wheat">สาลี</button>
+              <button class="filter-chip" data-filter="โอ๊ต" aria-label="Filter oats">โอ๊ต</button>
+            </div>
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-center reveal">
+              <div class="search-wrap relative">
+                <i data-lucide="search" class="search-icon h-4 w-4 text-slate-400"></i>
+                <input id="species-search" type="search" aria-label="Search crop variety" placeholder="ค้นหาสายพันธุ์..." class="search-input w-full rounded-full border border-slate-200 bg-white px-4 py-3 pl-10 text-sm shadow-sm outline-none transition focus:border-primary dark:border-slate-700 dark:bg-slate-900" />
+              </div>
+              <select id="season-filter" aria-label="เลือกฤดูกาลปลูก" class="rounded-full border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm outline-none transition focus:border-primary dark:border-slate-700 dark:bg-slate-900">
+                <option value="all">ฤดูกาลทั้งหมด</option>
+                <option value="นาปี">นาปี</option>
+                <option value="รอบปี">รอบปี</option>
+                <option value="ฤดูหนาว">ฤดูหนาว</option>
+                <option value="ฤดูใบไม้ผลิ">ฤดูใบไม้ผลิ</option>
+                <option value="ฤดูใบไม้ร่วง">ฤดูใบไม้ร่วง</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="species-grid" class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3"></div>
+        </div>
+      </section>
+
+      <!-- ส่วนจัดทำตารางข้อมูลทางโภชนาการและกราฟเปรียบเทียบ -->
+      <section id="nutrition" class="section-shell">
+        <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div class="reveal">
+            <div class="eyebrow">Nutritional profile</div>
+            <h2 class="section-title">การเปรียบเทียบคุณค่าทางโภชนาการ</h2>
+          </div>
+
+          <div class="mt-8 overflow-hidden rounded-[28px] border border-slate-200 bg-white/60 p-4 shadow-soft backdrop-blur-xl dark:border-slate-700 dark:bg-slate-900/60">
+            <div class="overflow-x-auto">
+              <table id="nutrition-table" class="w-full min-w-[1100px] text-left text-sm"></table>
+            </div>
+          </div>
+
+          <div class="mt-10 grid gap-6 xl:grid-cols-2">
+            <div class="rounded-[28px] border border-slate-200 bg-white/60 p-5 shadow-soft dark:border-slate-700 dark:bg-slate-900/60">
+              <div class="mb-4 flex items-center justify-between">
+                <h3 class="font-display text-2xl text-primary dark:text-darkgold">Radar profile</h3>
+                <span class="text-xs uppercase tracking-[0.24em] text-slate-500">6 varieties</span>
+              </div>
+              <canvas id="radarChart" height="320" aria-label="กราฟเปรียบเทียบโปรไฟล์สารอาหาร"></canvas>
+            </div>
+            <div class="rounded-[28px] border border-slate-200 bg-white/60 p-5 shadow-soft dark:border-slate-700 dark:bg-slate-900/60">
+              <div class="mb-4 flex items-center justify-between">
+                <h3 class="font-display text-2xl text-primary dark:text-darkgold">Protein vs Fiber</h3>
+                <span class="text-xs uppercase tracking-[0.24em] text-slate-500">by crop</span>
+              </div>
+              <canvas id="proteinChart" height="320" aria-label="กราฟเปรียบเทียบโปรตีนและใยอาหาร"></canvas>
+            </div>
+          </div>
+
+          <div class="mt-10 rounded-[28px] border border-slate-200 bg-white/60 p-5 shadow-soft dark:border-slate-700 dark:bg-slate-900/60">
+            <div class="mb-4 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <h3 class="font-display text-2xl text-primary dark:text-darkgold">Compare varieties</h3>
+                <p class="text-sm text-slate-500">เลือกสายพันธุ์ 2–3 ชนิดเพื่อเปรียบเทียบแบบเคียงข้าง</p>
+              </div>
+              <div class="flex flex-wrap gap-2" id="compare-pills"></div>
+            </div>
+            <div id="compare-table" class="overflow-x-auto"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ส่วนเปรียบเทียบความต้านทานโรคพืชแบบ interactive heatmap -->
+      <section id="disease" class="section-shell bg-white/30 dark:bg-slate-900/30">
+        <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div class="reveal">
+            <div class="eyebrow">Disease resilience</div>
+            <h2 class="section-title">การเปรียบเทียบความต้านทานโรคพืช</h2>
+          </div>
+          <div class="mt-8 overflow-hidden rounded-[28px] border border-slate-200 bg-white/60 p-4 shadow-soft backdrop-blur-xl dark:border-slate-700 dark:bg-slate-900/60">
+            <div id="disease-heatmap" class="overflow-x-auto"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ส่วนไทม์ไลน์วงจรชีวิตของพืชและขั้นตอนการดูแล -->
+      <section id="timeline" class="section-shell">
+        <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div class="reveal">
+            <div class="eyebrow">Lifecycle</div>
+            <h2 class="section-title">ไทม์ไลน์วงจรชีวิตพืช</h2>
+          </div>
+          <div class="timeline-wrap mt-10 overflow-x-auto pb-2">
+            <div id="lifecycle-timeline" class="timeline-grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ส่วนสรุปเชิงวิเคราะห์และแหล่งอ้างอิง -->
+      <section class="section-shell bg-white/30 dark:bg-slate-900/30">
+        <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div class="reveal">
+            <div class="eyebrow">Analysis summary</div>
+            <h2 class="section-title">บทสรุปเชิงวิเคราะห์</h2>
+          </div>
+          <div class="mt-10 grid gap-6 lg:grid-cols-3">
+            <article class="summary-card reveal">
+              <div class="icon-bubble"><i data-lucide="shield-check" class="h-7 w-7"></i></div>
+              <h3>ความมั่นคงทางอาหาร</h3>
+              <p>ธัญพืชยังคงเป็นฐานของอาหารหลักที่ให้พลังงานและสารอาหารแก่ประชากรโลก โดยเฉพาะข้าวที่มีบทบาททางวัฒนธรรมและเศรษฐกิจที่ลึกซึ้ง</p>
+            </article>
+            <article class="summary-card reveal">
+              <div class="icon-bubble"><i data-lucide="cloud-rain" class="h-7 w-7"></i></div>
+              <h3>การเปลี่ยนแปลงสภาพภูมิอากาศ</h3>
+              <p>ภัยแล้ง น้ำท่วม อุณหภูมิสูง และการระบาดของศัตรูพืชแบบใหม่ทำให้ความหลากหลายทางพันธุ์และนวัตกรรมด้านการเกษตรมีความสำคัญมากยิ่งขึ้น</p>
+            </article>
+            <article class="summary-card reveal">
+              <div class="icon-bubble"><i data-lucide="cpu" class="h-7 w-7"></i></div>
+              <h3>เกษตรสมัยใหม่</h3>
+              <p>การใช้เซ็นเซอร์ IoT, ดรอน, AI และการปรับปรุงพันธุ์ด้วยเทคโนโลยีชีวภาพช่วยเพิ่มผลผลิตและลดความเสี่ยงจากสภาพแวดล้อมที่เปลี่ยนแปลง</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="references" class="section-shell">
+        <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div class="grid gap-10 xl:grid-cols-[1.2fr_0.8fr]">
+            <div class="reveal">
+              <div class="eyebrow">References</div>
+              <h2 class="section-title">แหล่งอ้างอิงและทีมงาน</h2>
+              <div class="reference-list mt-6 space-y-4 text-slate-700 dark:text-slate-300">
+                <p>1. FAOSTAT. (2024). World food and agriculture statistics.</p>
+                <p>2. IRRI. (2024). Rice knowledge bank and varietal performance data.</p>
+                <p>3. USDA. (2024). Wheat and oat nutrition and agronomic profiles.</p>
+                <p>4. Department of Agriculture, Thailand. (2024). Rice production and cultivation guidelines.</p>
+                <p>5. Crop science literature (2023–2024) on climate resilience and biological traits.</p>
+              </div>
+            </div>
+            <div class="reveal grid gap-4 sm:grid-cols-2 xl:grid-cols-1">
+              <div class="team-card">
+                <div class="team-avatar">AK</div>
+                <div>
+                  <h3>อัครวัฒน์ วงศ์ชัย</h3>
+                  <p>Research lead</p>
+                </div>
+              </div>
+              <div class="team-card">
+                <div class="team-avatar">NS</div>
+                <div>
+                  <h3>นภัสสรณ์ รัตนกุล</h3>
+                  <p>Data visualizer</p>
+                </div>
+              </div>
+              <div class="team-card">
+                <div class="team-avatar">PT</div>
+                <div>
+                  <h3>ปริญญา ทองดี</h3>
+                  <p>Agri systems analyst</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white/60 dark:border-slate-800 dark:bg-slate-900/60">
+      <div class="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 lg:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-8">
+        <div>
+          <div class="flex items-center gap-3">
+            <img src="assets/logo-grain.svg" alt="โลโก้รวงข้าว" class="h-10 w-10" />
+            <span class="font-display text-xl font-semibold text-primary dark:text-darkgold">Khaow Research</span>
+          </div>
+          <p class="mt-4 max-w-md text-sm leading-7 text-slate-600 dark:text-slate-300">แหล่งข้อมูลเชิงวิชาการสำหรับการเรียนรู้เรื่องข้าวและธัญพืชสำคัญของโลก เพื่อส่งเสริมความเข้าใจด้านอาหาร การเกษตร และความยั่งยืน.</p>
+        </div>
+        <div>
+          <h4 class="font-display text-lg text-primary dark:text-darkgold">Explore</h4>
+          <ul class="mt-4 space-y-3 text-sm text-slate-600 dark:text-slate-300">
+            <li><a href="#intro">บทนำ</a></li>
+            <li><a href="#species">สายพันธุ์</a></li>
+            <li><a href="#nutrition">โภชนาการ</a></li>
+            <li><a href="#disease">ความต้านทาน</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display text-lg text-primary dark:text-darkgold">Contact</h4>
+          <ul class="mt-4 space-y-3 text-sm text-slate-600 dark:text-slate-300">
+            <li>hello@khaowresearch.org</li>
+            <li>+66 2 123 4567</li>
+            <li class="flex gap-3 pt-2">
+              <a href="https://facebook.com" aria-label="Facebook" class="social-link"><i data-lucide="facebook" class="h-4 w-4"></i></a>
+              <a href="https://instagram.com" aria-label="Instagram" class="social-link"><i data-lucide="instagram" class="h-4 w-4"></i></a>
+              <a href="https://x.com" aria-label="X" class="social-link"><i data-lucide="twitter" class="h-4 w-4"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-slate-200 px-4 py-4 text-center text-xs text-slate-500 dark:border-slate-800 dark:text-slate-400">
+        © 2026 Khaow Research Studio. All rights reserved.
+      </div>
+    </footer>
+
+    <button id="scroll-top" aria-label="กลับขึ้นด้านบน" class="fixed bottom-7 right-7 z-50 hidden rounded-full bg-primary p-3 text-white shadow-soft transition hover:-translate-y-1 hover:bg-accent dark:bg-darkgold dark:text-darkbg">
+      <i data-lucide="arrow-up" class="h-5 w-5"></i>
+    </button>
+
+    <div id="crop-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-ink/70 p-4 backdrop-blur-sm">
+      <div class="modal-panel max-h-[90vh] w-full max-w-5xl overflow-y-auto rounded-[30px] bg-cream p-6 shadow-soft dark:bg-slate-900">
+        <button id="close-modal" aria-label="Close crop detail" class="ml-auto flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:border-primary dark:border-slate-700 dark:bg-slate-800 dark:text-cream">
+          <i data-lucide="x" class="h-4 w-4"></i>
+        </button>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "ข้าวและธัญพืชสำคัญของโลก 6 สายพันธุ์",
+        "description": "ชุดข้อมูลเชิงวิชาการของสายพันธุ์ข้าวและธัญพืชสำคัญรวมถึงข้อมูลโภชนาการและความต้านทานโรคพืช",
+        "keywords": ["ข้าว", "ธัญพืช", "สาลี", "โอ๊ต", "agriculture"],
+        "license": "https://opensource.org/licenses/MIT",
+        "creator": {
+          "@type": "Organization",
+          "name": "Khaow Research Studio"
+        }
+      }
+    </script>
+  </body>
+</html>
